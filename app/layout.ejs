@@ -2,25 +2,67 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title><%- title %></title>
-  <link rel="stylesheet" href="./assets/style/all.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        <%- title %>
+    </title>
+    <link rel="stylesheet" href="./assets/style/all.css">
 </head>
 
 <body>
-  <header class="header">
-    這是 header
-  </header>
+    <nav class="navbar d-flex justify-content-between align-items-center">
+        <div>
+            <h1><a href="index.html">logo</a></h1>
+        </div>
+        <ul class="menu d-flex">
+            <li><a href="product-op.html" class="h5">系列鏡框</a></li>
+            <li><a href="location.html" class="h5">門市據點</a></li>
+            <li><a href="#" class="h5">部落格</a></li>
+            <li><a href="faq.html" class="h5">常見問題</a></li>
+        </ul>
+    </nav>
 
-  <%- contents %>
+    <%- contents %>
 
-  <footer class="footer">
-    footer
-  </footer>
-  <script src="./assets/js/vendors.js"></script>
-  <script src="./assets/js/all.js"></script>
+        <footer class="footer">
+            <div class="container">
+                <div class="d-flex justify-content-between border-bottom-light">
+                    <div class="footer-left">
+                        <ul class="footer-menu d-flex">
+                            <li><a href="index.html">首頁</a></li>
+                            <li><a href="product-op.html">系列鏡框</a></li>
+                            <li><a href="location.html">門市據點</a></li>
+                            <li><a href="#">部落格</a></li>
+                            <li><a href="faq.html">常見問題</a></li>
+                        </ul>
+                        <div class="footer-left-phone d-flex align-items-center">
+                            <img src="assets/images/icon-phone.svg" class="footer-left-icon" alt="phone"><a href="#"
+                                class="h4">0800-000-000</a>
+                        </div>
+                        <div class="footer-left-mail d-flex align-items-center">
+                            <img src="assets/images/icon-mail.svg" class="footer-left-icon" alt="mail"><a href="#"
+                                class="h4">glasses@business.com</a>
+                        </div>
+                    </div>
+                    <ul class="footer-links d-flex">
+                        <li><a href="#"><img src="assets/images/icon-fb.svg" alt="facebook"></a></li>
+                        <li><a href="#"><img src="assets/images/icon-ig.svg" alt="IG"></a></li>
+                        <li><a href="#"><img src="assets/images/icon-line.svg" alt="line"></a></li>
+                    </ul>
+                </div>
+                <div class="footer-bottom d-flex justify-content-between">
+                    <p class="footer-copyright">Copyright © 2020 Glasses.All rights reserved.</p>
+                    <ul class="footer-terms d-flex">
+                        <li><a href="#">隱私權政策</a></li>
+                        <li><a href="#">服務條款</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <script src="./assets/js/vendors.js"></script>
+        <script src="./assets/js/all.js"></script>
 </body>
 
 </html>

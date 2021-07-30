@@ -1,0 +1,40 @@
+.faq-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 36px;
+  @include pad {
+    margin-bottom: 32px;
+  }
+  @include mobile {
+    font-size: 20px;
+    margin-bottom: 24px;
+  }
+}
+
+.faq-list {
+  li:not(:last-child) {
+    margin-bottom: 32px;
+    @include pad {
+      margin-bottom: 24px;
+    }
+    @include mobile {
+      margin-bottom: 20px;
+    }
+  }
+}
+.faq-list-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  @include mobile {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+}
+.faq-list-text {
+  margin-left: 8.5%;
+  //   padding-left: 95px;
+  @include mobile {
+    font-size: 14px;
+  }
+}

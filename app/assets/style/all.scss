@@ -1,23 +1,20 @@
-$color: #00cc99;
+@import "variable";
+@import "reset";
 
-.header {
-  height: 200px;
-  background-color: #00cc99;
-}
+@import "base";
+@import "mixin";
 
-.footer {
-  height: 200px;
-  background-color: #00cc99;
-}
+@import "utilities";
 
-.box {
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  display: flex;
-  transition: all 0.5s;
-  &:hover {
-    width: 200px;
-    background-color: $color;
-  }
-}
+//page
+@import "layout";
+@import "main";
+
+@import "product";
+@import "op";
+@import "sun";
+
+@import "location";
+@import "locationDetails";
+
+@import "faq";

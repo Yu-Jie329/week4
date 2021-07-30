@@ -1,0 +1,50 @@
+.banner-img-1 {
+  background: url("../images/banner-1.png") center center / cover;
+  @include pad {
+    background: url("../images/banner-1.png") center center / cover;
+  }
+}
+.banner-img-2 {
+  background: url("../images/banner-2.png") center center / cover;
+  @include pad {
+    background: url("../images/banner-2.png") center center / cover;
+  }
+}
+
+//產品組合圖片
+.product-img {
+  width: 255px;
+  height: 164px;
+  @include pad {
+    width: 100%;
+  }
+}
+
+//Celluloid專用
+.celluloid {
+  margin-bottom: 96px;
+  @include pad {
+    margin-bottom: 65px;
+  }
+  @include mobile {
+    margin-bottom: 40px;
+  }
+  li {
+    width: 22%;
+    &:nth-child(n):nth-child(-n + 8) {
+      margin-bottom: 104px;
+    }
+    @include pad {
+      width: 47%;
+      &:nth-child(n):nth-child(-n + 10) {
+        margin-bottom: 72px;
+      }
+    }
+    @include mobile {
+      width: 100%;
+      &:nth-child(n):nth-child(-n + 11) {
+        margin-bottom: 32px;
+      }
+    }
+  }
+}

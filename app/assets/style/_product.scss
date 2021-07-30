@@ -1,0 +1,134 @@
+//產品連結-共用
+.product-menu {
+  display: flex;
+  .product-label {
+    width: 33.3%;
+  }
+  li {
+    border: 1px solid #dcdcdc;
+  }
+  a:hover {
+    border-bottom: 8px solid $secondary;
+    @include mobile {
+      border-bottom: 4px solid $secondary;
+    }
+  }
+  .productLink {
+    display: flex;
+    justify-content: center;
+    padding: 27px 0 18px 0;
+    border-bottom: 8px solid transparent;
+    @include pad {
+      padding: 14px 0 6px 0;
+    }
+    @include mobile {
+      padding: 6px 0 1px 0;
+      border-bottom: 4px solid transparent;
+    }
+
+    .product-icon {
+      width: 44px;
+      height: 44px;
+      margin-right: 10px;
+      @include pad {
+        max-width: 29px;
+        height: auto;
+        margin-right: 9px;
+      }
+      @include mobile {
+        max-width: 15px;
+        margin-right: 3px;
+      }
+    }
+    .product-label-title {
+      font-size: 32px;
+      color: $dark;
+      @include pad {
+        font-size: 24px;
+      }
+      @include mobile {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+//產品banner
+.product_banner {
+  display: flex;
+  .product-banner-img {
+    width: 50%;
+    height: 304px;
+    @include mobile {
+      height: 148px;
+    }
+  }
+}
+
+//產品title、text-共用
+.product-item {
+  margin-bottom: 40px;
+  @include pad {
+    margin-bottom: 32px;
+  }
+  @include mobile {
+    margin-bottom: 20px;
+  }
+}
+.product-title {
+  font-size: 42px;
+  @include pad {
+    font-size: 32px;
+  }
+  @include mobile {
+    font-size: 20px;
+  }
+}
+.product-text {
+  font-size: 32px;
+  @include pad {
+    font-size: 24px;
+  }
+  @include mobile {
+    font-size: 16px;
+  }
+}
+
+//產品列表-共用
+.combi {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  li {
+    .combi-item-1 {
+      display: flex;
+      justify-content: space-between;
+    }
+    .combi-item-2 {
+      display: flex;
+    }
+    .box {
+      width: 24px;
+      height: 24px;
+      border-radius: 4px;
+      margin-right: 8px;
+      @include mobile {
+        margin-right: 4px;
+      }
+    }
+    h5,
+    span {
+      @include mobile {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+//產品樣式顏色
+.product-color-1 {
+  background-color: #5f3e2d;
+}
+.product-color-2 {
+  background-color: #b75929;
+}

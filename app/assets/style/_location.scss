@@ -1,0 +1,148 @@
+//分頁共用title
+.title-page {
+  font-size: 48px;
+  font-weight: bold;
+  padding-left: 16px;
+  border-left: 8px solid #9f1213;
+  margin-bottom: 60px;
+  @include pad {
+    border-left: 4px solid #9f1213;
+    margin-bottom: 40px;
+  }
+  @include mobile {
+    font-size: 28px;
+    padding-left: 8px;
+    margin-bottom: 24px;
+  }
+}
+//分頁共用section
+.selectRegion {
+  display: flex;
+  margin-bottom: 32px;
+  @include pad {
+    margin-bottom: 24px;
+  }
+  @include mobile {
+    margin-bottom: 20px;
+  }
+  span {
+    font-size: 24px;
+    padding-right: 20px;
+    @include pad {
+      font-size: 16px;
+    }
+    @include mobile {
+      font-size: 14px;
+      padding-right: 12px;
+    }
+  }
+  .dropdown-toggle {
+    width: 324px;
+    @include pad {
+      max-width: 237px;
+    }
+    @include mobile {
+      max-width: 277px;
+    }
+  }
+}
+
+.card-area {
+  width: 31.5%;
+  @include pad {
+    width: 47%;
+  }
+  @include mobile {
+    width: 100%;
+  }
+}
+.card-area-img {
+  width: 100%;
+  height: 224px;
+  @include pad {
+    max-height: 164px;
+  }
+}
+.card-area-title {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 12px 0 12px 24px;
+  @include pad {
+    font-size: 16px;
+    padding: 8px 0 8px 24px;
+  }
+}
+.card-area-item {
+  padding: 16px 23px 16px 24px;
+  li {
+    display: flex;
+    align-items: baseline;
+  }
+  li:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+.card-area-text {
+  font-size: 20px;
+  @include pad {
+    font-size: 14px;
+  }
+}
+.card-area-link {
+  display: block;
+  color: $light;
+  background: $dark;
+  text-align: center;
+  font-size: 19px;
+  padding: 20px 0;
+  @include pad {
+    font-size: 14px;
+    padding: 16px 0;
+  }
+  &:hover {
+    color: $secondary;
+  }
+}
+.card-area-icon {
+  width: 20px;
+  height: 20px;
+  padding-top: 3px;
+  margin-right: 10px;
+  @include pad {
+    width: 16px;
+    height: 16px;
+  }
+}
+.areaList {
+  display: flex;
+  flex-wrap: wrap;
+  li {
+    margin-right: 30px;
+    @include mobile {
+      margin-right: 0;
+    }
+    &:nth-child(3n) {
+      margin-right: 0;
+      @include pad {
+        margin-right: 30px;
+      }
+    }
+  }
+  li:nth-child(n):nth-child(-n + 3) {
+    margin-bottom: 32px;
+  }
+  @include pad {
+    li:nth-child(n):nth-child(-n + 4) {
+      margin-bottom: 20px;
+    }
+    li:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+  @include mobile {
+    li:nth-child(n):nth-child(-n + 4) {
+      margin-bottom: 16px;
+      margin-right: 0;
+    }
+  }
+}

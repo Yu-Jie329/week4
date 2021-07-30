@@ -1,0 +1,41 @@
+//斷點
+@mixin pad {
+  @media (max-width: 992px) {
+    @content;
+  }
+}
+@mixin mobile {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
+//圖片取代文字
+@mixin hide-text {
+  text-indent: 101%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+//連結特效
+//淡出
+@mixin linkFadeOut {
+  a {
+    opacity: 1;
+  }
+  &:hover {
+    opacity: 0.5;
+  }
+}
+//放大
+@mixin linkGetBigger($size) {
+  &:hover {
+    transform: scale($size);
+  }
+}
+//陰影
+@mixin linkShadow {
+  &:hover {
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.8);
+  }
+}

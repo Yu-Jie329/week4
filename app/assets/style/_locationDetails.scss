@@ -1,0 +1,62 @@
+.areaDetailsList {
+  display: flex;
+  justify-content: space-between;
+  @include pad {
+    flex-direction: column;
+  }
+}
+.store-information {
+  width: 40%;
+  @include pad {
+    width: 100%;
+  }
+}
+.store-information-content {
+  @include pad {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+  }
+  @include mobile {
+    flex-direction: column;
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+  .card-area-details-img {
+    width: 100%;
+    height: 224px;
+    @include pad {
+      width: 47.8%;
+      max-height: 164px;
+    }
+    @include mobile {
+      width: 100%;
+    }
+  }
+  .store-information-item {
+    @include pad {
+      width: 47.8%;
+    }
+    @include mobile {
+      width: 100%;
+    }
+  }
+}
+
+.store-maps {
+  width: 57%;
+  @include pad {
+    width: 100%;
+  }
+  .store-map-img {
+    width: 100%;
+    height: 422px;
+    @include mobile {
+      height: 211px;
+    }
+  }
+}

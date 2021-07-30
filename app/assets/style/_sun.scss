@@ -1,0 +1,43 @@
+.banner-img-3 {
+  background: url("../images/banner-3.png") center center / cover;
+  @include pad {
+    background: url("../images/banner-3.png") center center / cover;
+  }
+}
+.banner-img-4 {
+  background: url("../images/product-2-color.png") center center / cover;
+  @include pad {
+    background: url("../images/product-2-color.png") center center / cover;
+  }
+}
+
+//新系列專用
+.newCollection {
+  li {
+    width: 31%;
+    &:nth-child(n):nth-child(-n + 3) {
+      margin-bottom: 104px;
+    }
+    @include pad {
+      width: 47%;
+      &:nth-child(n):nth-child(-n + 4) {
+        margin-bottom: 72px;
+      }
+    }
+    @include mobile {
+      width: 100%;
+      &:nth-child(n):nth-child(-n + 5) {
+        margin-bottom: 32px;
+      }
+    }
+  }
+}
+
+//新系列產品組合圖片
+.product-newCollection-img {
+  width: 350px;
+  height: 224px;
+  @include pad {
+    width: 100%;
+  }
+}
